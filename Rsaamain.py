@@ -48,11 +48,6 @@ for kek in simpleNumbs:
 
 
 
-for i in range(m):
-
-    if (i * e) % m == 1:
-
-        d = i
 
 for i in range(m):
 
