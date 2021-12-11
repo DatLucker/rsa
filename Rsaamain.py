@@ -18,16 +18,17 @@ def decodeMessage( message, d, mod):
 
 
 
-n = int(input('Введите положительное число n: '))
 
-simpleNumbs = kek(n)
+
+
 
 p = simpleNumbs[random.randint(10, 20)]
 
 q = simpleNumbs[random.randint(21, 30)]
 
 mod = p * q
-
+n = mod
+simpleNumbs = kek(n)
 m = (p-1) * (q-1)
 
 e = d = 1
