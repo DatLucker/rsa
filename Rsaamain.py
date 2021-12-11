@@ -31,7 +31,7 @@ n = mod
 simpleNumbs = kek(n)
 m = (p-1) * (q-1)
 
-e = d = 1
+e = d = 1 //объявление переменных
 
 
 for kek in simpleNumbs:
