@@ -1,4 +1,4 @@
-from simple import simple
+from something import kek
 
 import random
 
@@ -16,7 +16,7 @@ def decodeMessage( message, d, mod):
 
 
 
-                
+
            
            
            
@@ -24,7 +24,7 @@ def decodeMessage( message, d, mod):
            map(lambda num: int(num) ** d % mod , message)))
 n = int(input('Введите положительное число n: '))
 
-simpleNumbs = simple(n)
+simpleNumbs = kek(n)
 
 p = simpleNumbs[random.randint(10, 20)]
 
@@ -35,3 +35,49 @@ mod = p * q
 m = (p-1) * (q-1)
 
 e = d = 1
+
+
+for kek in simpleNumbs:
+
+    if kek >= m:
+
+        break
+
+    if m % kek != 0:
+
+        e = kek
+
+        break
+
+for kek in simpleNumbs:
+
+    if kek >= m:
+
+        break
+
+    if m % kek != 0:
+
+        e = kek
+
+        break
+
+for i in range(m):
+
+    if (i * e) % m == 1:
+
+        d = i
+
+for i in range(m):
+
+    if (i * e) % m == 1:
+
+        d = i
+
+
+message = input('Алиса говорит:')
+
+encodedMessage = encodeMessage(message,e,mod)
+
+print(f'Алиса зашифровывает сообщение: {"".join(encodedMessage)}')
+
+print(f'Боб расшифровывает сообщение:{"".join(decodeMessage(encodedMessage, d, mod))}')
