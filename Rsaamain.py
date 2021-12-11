@@ -46,17 +46,7 @@ for kek in simpleNumbs:
 
         break
 
-for kek in simpleNumbs:
 
-    if kek >= m:
-
-        break
-
-    if m % kek != 0:
-
-        e = kek
-
-        break
 
 for i in range(m):
 
