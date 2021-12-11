@@ -13,15 +13,11 @@ def encodeMessage(message, e, mod):
 def decodeMessage( message, d, mod):
 
     return list(map(lambda num: ru[num] if (num < len(ru) and ru[num] in ru) else '?',
-
-
-
-
-           
-           
-           
-           
+                     
            map(lambda num: int(num) ** d % mod , message)))
+
+
+
 n = int(input('Введите положительное число n: '))
 
 simpleNumbs = kek(n)
